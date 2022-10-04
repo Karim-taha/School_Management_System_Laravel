@@ -36,7 +36,7 @@ Route::prefix()->group(function() {
     Route::resource('times', TimeController::class);
     Route::resource('shifts', ShiftController::class);
     Route::resource('subjects', SubjectController::class);
-    Route::resource('sessions', SessionController::class);
+    Route::resource('sessions', SessionController::class); 
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
